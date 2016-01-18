@@ -8,13 +8,13 @@ import 'rxjs/add/operator/map';
 
 const URL : string = 'https://www.udemy.com/api-2.0/courses/';
 const AUTH : string = 'M1VBWGRRSG9qZkNqMlphQXk5Wmd3TjN5bkVxSm5BeVNWVGhVaTNGajpLOVZRTFVtUXFFem94SzhVQ3pWaWZNdnlYWDNWZ1BZdUhRV01jWmVLdE1HbWd4QURKQTFXQnUyb2piMHhqZTRPdjNPNnF4QkFGVWEzcGVqQWZYTENiQ1FzMHhPTFZhRDR1WDhJRGRXdDJZdW14WXFrV1NPek45MU1qenVCVzdsYg=='
-let courses : Array<string> = [URL + '359660/',URL + '520122/'];
-
+let courses : Array<string> = ["http://date.jsontest.com" ,"http://date.jsontest.com"];
 @Injectable()
 export class CourseDetailsService {
     http: Http;
     constructor(@Inject(Http) Http) {
         this.http = Http;
+        debugger;
     }
 
     get() {

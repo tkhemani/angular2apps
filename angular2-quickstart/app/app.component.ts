@@ -2,6 +2,15 @@ import {Component} from 'angular2/core';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App???</h1>'
+    template: '<h1>{{test}}</h1>'
 })
-export class AppComponent { }
+export class AppComponent { 
+    test = 27;
+    constructor () {
+        this.test = 26;
+        this.tests();
+    }
+    tests() {
+        this.test = 3932;
+    }
+}
