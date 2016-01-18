@@ -3,12 +3,11 @@
     "target": "ES5",
     "module": "system",
     "moduleResolution": "node",
-    "sourceMap": true,
+    "inlineSourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": false,
-   // "watch": true  //Set this as alternate to using gulp tasks
+    "noImplicitAny": false
   },
   "exclude": [
     "node_modules"

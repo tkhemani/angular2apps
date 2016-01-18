@@ -11,6 +11,6 @@ export class AppComponent {
         this.tests();
     }
     tests() {
-        this.test = 3932;
+        this.test = 55;
     }
 }
