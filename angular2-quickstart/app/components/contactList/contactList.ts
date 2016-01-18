@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component, OnInit} from 'angular2/core';
 import {NgIf, NgFor} from 'angular2/common';
 import {contact} from '../contact/contact';
 import {ContactService} from '../services/contact.service'
@@ -10,7 +10,7 @@ import {ContactService} from '../services/contact.service'
     directives: [contact],
     providers: [ContactService]
 })
-export class contactList { 
+export class contactList implements OnInit{ 
     private selectedPerson = {};
     private persons = [];
     private showDetail = false;
@@ -21,5 +21,8 @@ export class contactList {
     }
     getContacts(){
         this._contactService.getContacts().then((contacts)=> this.persons = contacts);
+    }
+    ngOnInit(){
+        this.getContacts();
     }
 }

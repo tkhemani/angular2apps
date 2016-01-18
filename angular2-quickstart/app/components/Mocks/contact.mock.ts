@@ -1,12 +1,12 @@
 export const CONTACTS = [{
-        name: "tarun",
+        name: "zzzzzzzzzz",
         phone: 245009
     },
     {
-        name: "tasdsrun",
+        name: "zz",
         phone: 245009
     },
     {
-        name: "res",
+        name: "z",
         phone: 245009
     }]
