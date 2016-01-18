@@ -1,3 +1,4 @@
+<button (click)="getContacts()">Get Contacts</button>
 <ul>
     <li *ngFor="#person of persons" (click)="personSelected(person)" [class.clicked]="showDetail">
         {{person.name}}
