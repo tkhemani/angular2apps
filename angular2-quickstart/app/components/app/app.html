@@ -1,0 +1,8 @@
+<ul>
+    <li *ngFor="#person of persons" (click)="personSelected(person)" [class.clicked]="showDetail">
+        {{person.name}}
+    </li>
+</ul>
+<div>
+    Hello: {{selectedPerson.name}}
+</div>
